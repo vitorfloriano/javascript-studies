@@ -26,9 +26,16 @@
       return firstUpper + restOfTheWord;
     }
 
+    function lastLetter() {
+      let word = prompt("Type another word:");
+      let last = word.charAt(word.length - 1);
+      return last;
+    }
+
     console.log(add7());
     console.log(multiply(2,3));
     console.log(capitalize());
+    console.log(lastLetter());
     </script>
 
 
