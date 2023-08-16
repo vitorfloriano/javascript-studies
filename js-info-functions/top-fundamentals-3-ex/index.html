@@ -19,8 +19,11 @@
 
     function capitalize() {
       let word = prompt("type a word:");
-      let lowercaseWord = word.toLowerCase();
-      return lowercaseWord.toUpperCase(0);
+      let first = word.charAt(0);
+      let rest = word.slice(1);
+      let restOfTheWord = rest.toLowerCase();
+      let firstUpper = first.toUpperCase();
+      return firstUpper + restOfTheWord;
     }
 
     console.log(add7());
