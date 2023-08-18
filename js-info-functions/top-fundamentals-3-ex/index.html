@@ -13,8 +13,29 @@
       return Number(number) + 7;
     }
 
-    console.log(add7());
+    function multiply(a,b) {
+      return a * b;
+    }
 
+    function capitalize() {
+      let word = prompt("type a word:");
+      let first = word.charAt(0);
+      let rest = word.slice(1);
+      let restOfTheWord = rest.toLowerCase();
+      let firstUpper = first.toUpperCase();
+      return firstUpper + restOfTheWord;
+    }
+
+    function lastLetter() {
+      let word = prompt("Type another word:");
+      let last = word.charAt(word.length - 1);
+      return last;
+    }
+
+    console.log(add7());
+    console.log(multiply(2,3));
+    console.log(capitalize());
+    console.log(lastLetter());
     </script>
 
 
